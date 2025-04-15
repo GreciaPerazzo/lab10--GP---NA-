@@ -29,7 +29,7 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-def divide(a, b):
+def div(a, b):
     if b == 0:
         raise ZeroDivisionError("Division by zero is undefined")
     return a / b

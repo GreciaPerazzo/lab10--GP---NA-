@@ -1,15 +1,15 @@
 # https://github.com/GreciaPerazzo/lab10--GP---NA-
 import unittest
-from calculator import *
+import calculator
 
 class TestCalculator(unittest.TestCase):
     ######## Partner 2
     def test_add(self): # 3 assertions
-        fill in code
+        pass
 
     def test_subtract(self): # 3 assertions
-        fill in code
-    pass
+        pass
+
 
     ####### Partner 1
     def test_multiply(self):
@@ -18,25 +18,24 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculator.multiply(0, 100), 0)
 
     def test_divide(self):
-        self.assertEqual(calculator.divide(10, 2), 5)
-        self.assertAlmostEqual(calculator.divide(5, 2), 2.5)
+        self.assertEqual(calculator.div(10, 2), 5)
+        self.assertAlmostEqual(calculator.div(5, 2), 2.5)
         with self.assertRaises(ZeroDivisionError):
-            calculator.divide(10, 0)
+            calculator.div(10, 0)
 
     ####### Partner 2
     def test_divide_by_zero(self): # 1 assertion
-         call division function inside, example:
-         with self.assertRaises(<INSERT_ERROR_TYPE>):
-             div(0, 5)
-        pass
+
+         with self.assertRaises(ZeroDivisionError):
+             calculator.div(8, 0)
+
 
     def test_logarithm(self): # 3 assertions
-        fill in code
-
+        pass
     def test_log_invalid_base(self): # 1 assertion
         # use same technique from test_divide_by_zero
-        fill in code
-    pass
+        pass
+
     
     ####### Partner 1
     def test_log_invalid_argument(self):
