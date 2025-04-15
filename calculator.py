@@ -41,5 +41,8 @@ def logarithm(a, b):
 
 def exponent(a, b):
     return a ** b
-
+def mul(a,b):
+    pass
+def exp(a, b):
+    pass
 
